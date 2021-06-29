@@ -12,7 +12,7 @@ const connectDB = () => {
     const connection = mongoose.connection;
 
     connection.once('open', () => {
-        console.log('Db Connected :)');
+        console.log('dB Connected :)');
 
     }).catch(err =>{
         console.log('Connection Failed :(');
@@ -20,3 +20,7 @@ const connectDB = () => {
 }
 
 module.exports = connectDB;
+
+
+
+
