@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
     upload(req, res, async (err)=>{
           // validate request
         if(!req.file){
-            return res.json({error:'All fields are requires'});
+            return res.json({error:'All fields are required'});
         }
         if(err){
             return res.status(500).send({error:err.message})
@@ -90,6 +90,7 @@ router.post('/send', async (req,res)=>{
             expires: '24 Hours'
         })
     })
+    return res.send({success:true})
 
 
 })
