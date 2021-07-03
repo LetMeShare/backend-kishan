@@ -1,10 +1,10 @@
-# Product Name
+# LetsShare
 > This Repository contains the Backend file of LetsShare App..
 
 [![NPM Version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-LetsShare is a File sharing platform, targeted School as well as college going students inorder to share their file to their fellows.
+LetsShare is a File sharing platform, targeted School as well as college going students inorder to share their file with their fellows.
 
 
 ## Usage example
