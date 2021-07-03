@@ -17,7 +17,22 @@ const corsOptions = {
 //     "preflightContinue": false,
 //     "optionsSuccessStatus": 204
 //   }
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+app.get('/api/files', (req, res) => {
+  request(
+    { url: 'http://localhost:3000/jokes/random' },
+    (error, response, body) => {
+      if (error || response.statusCode !== 200) {
+        return res.status(500).json({ type: 'error', message: err.message });
+      }
 
+      res.json(JSON.parse(body));
+    }
+  )
+});
 app.use(cors(corsOptions))
 app.use(express.static('public'));
 
