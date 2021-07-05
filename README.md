@@ -9,7 +9,7 @@ LetsShare is a File sharing platform, targeted School as well as college going s
 
 ## Usage example
 
-We're working on the Frontend part, stay tuned.
+[LetsShare](https://letsshareui.netlify.app/)
 
 
 ## Meta
